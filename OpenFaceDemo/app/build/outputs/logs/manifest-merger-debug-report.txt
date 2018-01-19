@@ -4,6 +4,7 @@ ADDED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidMa
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml:2:1-36:12
+MERGED from [com.github.huangdali:LogcatView:v1.1.2] /home/dff/.gradle/caches/transforms-1/files-1.1/LogcatView-v1.1.2.aar/b47831eda9583e75f43c2950308f9319/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dff/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/cc7f9eff4dcffa469368ac40d24ea983/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dff/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/dc94059b46e5a327df54dd6bb9cf579b/AndroidManifest.xml:2:1-11:12
 MERGED from [:OpenCVLibrary340] /home/dff/openface-android-sample/OpenFaceDemo/OpenCVLibrary340/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-27:12
@@ -129,6 +130,8 @@ uses-sdk
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml
 INJECTED from /home/dff/openface-android-sample/OpenFaceDemo/app/src/main/AndroidManifest.xml
+MERGED from [com.github.huangdali:LogcatView:v1.1.2] /home/dff/.gradle/caches/transforms-1/files-1.1/LogcatView-v1.1.2.aar/b47831eda9583e75f43c2950308f9319/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.huangdali:LogcatView:v1.1.2] /home/dff/.gradle/caches/transforms-1/files-1.1/LogcatView-v1.1.2.aar/b47831eda9583e75f43c2950308f9319/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dff/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/cc7f9eff4dcffa469368ac40d24ea983/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dff/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/cc7f9eff4dcffa469368ac40d24ea983/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dff/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/dc94059b46e5a327df54dd6bb9cf579b/AndroidManifest.xml:5:5-7:41

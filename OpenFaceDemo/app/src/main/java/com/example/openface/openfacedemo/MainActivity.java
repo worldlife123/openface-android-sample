@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements
         mOpenCvCameraView.setVisibility(CameraBridgeViewBase.VISIBLE);
         mOpenCvCameraView.setMaxFrameSize(640, 480);
         mOpenCvCameraView.setCvCameraViewListener(this);
+
+        new LogcatDialog(this).show();
     }
     private void initResources() {
 
@@ -200,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements
                     try {
                         mOpenCvCameraView.enableView();
                         loadTask.execute();
-                        Toast.makeText(getApplicationContext(), "Trying to initialize native-lib...", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Trying to initialize native-lib...", Toast.LENGTH_SHORT).show();
                     } catch (Exception e) {
                         Log.v(LOG_TAG, "Failed loading library mobilenet_dnn");
                     }

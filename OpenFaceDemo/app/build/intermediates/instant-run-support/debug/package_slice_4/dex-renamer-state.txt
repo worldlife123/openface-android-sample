@@ -1,4 +1,4 @@
-#Thu Jan 18 18:16:00 CST 2018
-base.0=/home/dff/openface-android-sample/OpenFaceDemo/app/build/intermediates/transforms/dexMerger/debug/43
+#Fri Jan 19 18:36:48 CST 2018
+base.0=/home/dff/openface-android-sample/OpenFaceDemo/app/build/intermediates/transforms/dexMerger/debug/62
 path.0=classes.dex
 renamed.0=classes.dex
