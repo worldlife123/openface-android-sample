@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements
     private Mat mGray;
     private CameraBridgeViewBase mOpenCvCameraView;
     private boolean isReadyToProcessDNN = false;
+    private LoadConfigurationsTask loadTask = new LoadConfigurationsTask();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements
         initResources();
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.fd_activity_surface_view);
         mOpenCvCameraView.setVisibility(CameraBridgeViewBase.VISIBLE);
-        mOpenCvCameraView.setMaxFrameSize(320, 240);
+        mOpenCvCameraView.setMaxFrameSize(640, 480);
         mOpenCvCameraView.setCvCameraViewListener(this);
     }
     private void initResources() {
@@ -95,34 +97,34 @@ public class MainActivity extends AppCompatActivity implements
         resources.put(R.raw.ccnf_patches_1_wild, "ccnf_patches_1_wild.txt");
         resources.put(R.raw.clnf_right_synth, "clnf_right_synth.txt");
         resources.put(R.raw.ccnf_patches_100_inner, "ccnf_patches_100_inner.txt");
-        resources.put(R.raw.left_ccnf_patches_150_synth_lid_, "left_ccnf_patches_1.50_synth_lid_.txt");
+        resources.put(R.raw.left_ccnf_patches_150_synth_lid_, "left_ccnf_patches_150_synth_lid_.txt");
         resources.put(R.raw.main_clnf_ibug_glasses_movile, "main_clnf_ibug_glasses_movile.txt");
         resources.put(R.raw.main_clnf_synth_left, "main_clnf_synth_left.txt");
-        resources.put(R.raw.ccnf_patches_150_synth_lid_, "ccnf_patches_1.50_synth_lid_.txt");
+        resources.put(R.raw.ccnf_patches_150_synth_lid_, "ccnf_patches_150_synth_lid_.txt");
         resources.put(R.raw.in_the_wild_aligned_pdm_68, "in_the_wild_aligned_pdm_68.txt");
         resources.put(R.raw.ccnf_patches_05_wild, "ccnf_patches_05_wild.txt");
-        resources.put(R.raw.ccnf_patches_025_ibug_glasses, "ccnf_patches_0.25_ibug_glasses.txt");
+        resources.put(R.raw.ccnf_patches_025_ibug_glasses, "ccnf_patches_025_ibug_glasses.txt");
         resources.put(R.raw.main_clnf_wild, "main_clnf_wild.txt");
         resources.put(R.raw.clnf_inner, "clnf_inner.txt");
-        resources.put(R.raw.left_ccnf_patches_100_synth_lid_, "left_ccnf_patches_1.00_synth_lid_.txt");
+        resources.put(R.raw.left_ccnf_patches_100_synth_lid_, "left_ccnf_patches_100_synth_lid_.txt");
         resources.put(R.raw.clnf_left_synth, "clnf_left_synth.txt");
-        resources.put(R.raw.ccnf_patches_05_general, "ccnf_patches_0.5_general.txt");
+        resources.put(R.raw.ccnf_patches_05_general, "ccnf_patches_05_general.txt");
         resources.put(R.raw.haar_align, "haar_alignn.txt");
-        resources.put(R.raw.ccnf_patches_025_general, "ccnf_patches_0.25_general.txt");
+        resources.put(R.raw.ccnf_patches_025_general, "ccnf_patches_025_general.txt");
         resources.put(R.raw.clnf_wild, "clnf_wild.txt");
         resources.put(R.raw.clnf_general, "clnf_general.txt");
         resources.put(R.raw.pdm_68_aligned_ibug_glasses, "pdm_68_aligned_ibug_glasses.txt");
-        resources.put(R.raw.ccnf_patches_035_ibug_glasses, "ccnf_patches_0.35_ibug_glasses.txt");
-        resources.put(R.raw.ccnf_patches_025_wild, "ccnf_patches_0.25_wild.txt");
+        resources.put(R.raw.ccnf_patches_035_ibug_glasses, "ccnf_patches_035_ibug_glasses.txt");
+        resources.put(R.raw.ccnf_patches_025_wild, "ccnf_patches_025_wild.txt");
         resources.put(R.raw.pdm_51_inner, "pdm_51_inner.txt");
         resources.put(R.raw.clnf_ibug_glasses, "clnf_ibug_glasses.txt");
-        resources.put(R.raw.ccnf_patches_100_synth_lid_, "ccnf_patches_1.00_synth_lid_.txt");
+        resources.put(R.raw.ccnf_patches_100_synth_lid_, "ccnf_patches_100_synth_lid_.txt");
         resources.put(R.raw.ccnf_patches_035_general, "ccnf_patches_035_general.txt");
         resources.put(R.raw.tris_68, "tris_68.txt");
         resources.put(R.raw.validator_general_68, "validator_general_68.txt");
         resources.put(R.raw.pdm_28_eye_3d_closed, "pdm_28_eye_3d_closed.txt");
-        resources.put(R.raw.ccnf_patches_035_wild, "ccnf_patches_0.35_wild.txt");
-        resources.put(R.raw.ccnf_patches_05_ibug_glasses, "ccnf_patches_0.5_ibug_glasses.txt");
+        resources.put(R.raw.ccnf_patches_035_wild, "ccnf_patches_035_wild.txt");
+        resources.put(R.raw.ccnf_patches_05_ibug_glasses, "ccnf_patches_05_ibug_glasses.txt");
         resources.put(R.raw.main_clnf_synth_right, "main_clnf_synth_right.txt");
         resources.put(R.raw.pdm_28_l_eye_3d_closed, "pdm_28_l_eye_3d_closed.txt");
 
@@ -139,22 +141,20 @@ public class MainActivity extends AppCompatActivity implements
 
         // create a loading configuration task:
 
-        LoadConfigurationsTask loadTask = new LoadConfigurationsTask();
+        //LoadConfigurationsTask loadTask = new LoadConfigurationsTask();
         loadTask.setCallback(getApplicationContext(), this);
         loadTask.setConfigurationResources(resources);
         loadTask.setDNNModelsToWrite(CAFFE_MODEL[0], CAFFE_MODEL[1]);
         loadTask.setInputSize(300, 300);
         loadTask.setNeuralType(LoadConfigurationsTask.NeuralType.NT_CAFFE);
-        loadTask.execute();
-
-
+        //loadTask.execute(); //execute after opencv library is loaded
     }
     @Override
     protected void onResume() {
         super.onResume();
         if (!OpenCVLoader.initDebug()) {
             Log.d(LOG_TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
-            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this, mLoaderCallback);
+            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_3_0, this, mLoaderCallback);
         } else {
             Log.d(LOG_TAG, "OpenCV library found inside package. Using it!");
             mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
@@ -177,7 +177,9 @@ public class MainActivity extends AppCompatActivity implements
         mRgba = cvCameraViewFrame.rgba();
         mGray = cvCameraViewFrame.gray();
         if (isReadyToProcessDNN) {
-            JniManager.process(mRgba.getNativeObjAddr(), mGray.getNativeObjAddr());
+            Toast.makeText(getApplicationContext(), "Processing frame...", Toast.LENGTH_SHORT).show();
+            Log.i(LOG_TAG, "Processing frame...");
+            //JniManager.process(mRgba.getNativeObjAddr(), mGray.getNativeObjAddr());
         }
         return mRgba;
     }
@@ -186,6 +188,7 @@ public class MainActivity extends AppCompatActivity implements
     public void onConfigurationFinished() {
         isReadyToProcessDNN = true;
         Log.v(LOG_TAG, "Configuration finished and loaded correctly");
+        Toast.makeText(getApplicationContext(), "Configuration finished and loaded correctly", Toast.LENGTH_SHORT).show();
         JniManager.start();
     }
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -196,6 +199,8 @@ public class MainActivity extends AppCompatActivity implements
                     Log.i(LOG_TAG, "OpenCV loaded successfully");
                     try {
                         mOpenCvCameraView.enableView();
+                        loadTask.execute();
+                        Toast.makeText(getApplicationContext(), "Trying to initialize native-lib...", Toast.LENGTH_SHORT).show();
                     } catch (Exception e) {
                         Log.v(LOG_TAG, "Failed loading library mobilenet_dnn");
                     }

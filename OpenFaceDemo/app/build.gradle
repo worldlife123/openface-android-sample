@@ -2,17 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'Testing key'
-            keyPassword 'Vicomtech1'
-            storeFile file('../keystores/TestingKeyStore.jks')
-            storePassword 'Vicomtech1'
-        }
     }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.openface.openfacedemo"
-        minSdkVersion 21
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -21,24 +15,37 @@ android {
             cmake {
                 cppFlags "-std=c++14"
                 arguments "-DOpenCV_DIR=" + getOpenCVDir().toString() + "/sdk/native/jni",
+                        //"-DOpenCV_LIBS=" + getOpenCVDir().toString() + "/sdk/native/libs/${ANDROID_ABI}/libopencv_java3.so",
                         "-Ddlib_DIR=" + getDlibDir().toString() + "/dlib",
                         "-DANDROID_NATIVE_API_LEVEL=23",
                         "-DANDROID_CPP_FEATURES=rtti exceptions",
-                        "-DANDROID_STL=gnustl_static",
+                        //"-DANDROID_STL=gnustl_static", //fail to compile because of some unavailable c++11 stl functions like std::to_string and std::round
+                        //"-D_GLIBCXX_USE_C99=ON",
+                        "-DANDROID_STL=c++_static",//linker failed on linking cv::CascadedClassifier::detectMultiScale
+                        //"-DANDROID_STL=gnustl_shared",
                         "-DDLIB_ENABLE_ASSERTS=OFF",
                         "-DDLIB_NO_GUI_SUPPORT=ON",
                         "-DDLIB_JPEG_SUPPORT=OFF",
                         "-DDLIB_PNG_SUPPORT=OFF",
                         "-DDLIB_LINK_WITH_SQLITE3=OFF"
-                abiFilters 'armeabi-v7a', 'arm64-v8a'
+                abiFilters 'armeabi-v7a', 'arm64-v8a'//, 'x86'
             }
+        }
+        sourceSets.main {
+            jniLibs.srcDirs = []//disable opencv library package to reduce apk size(need manager instead)
         }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+            //signingConfig signingConfigs.config
+        }
+        debug {
+            //renderscriptDebuggable true
+            minifyEnabled false
+            //signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     externalNativeBuild {
@@ -46,6 +53,7 @@ android {
             path "CMakeLists.txt"
         }
     }
+
 }
 def getOpenCVDir() {
     Properties properties = new Properties()
@@ -75,5 +83,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'com.github.uelordi01:Opencv-Android-3.3-gradle:1.1'
+    //compile 'com.github.uelordi01:Opencv-Android-3.3-gradle:1.1'
+    implementation project(':OpenCVLibrary340')
 }

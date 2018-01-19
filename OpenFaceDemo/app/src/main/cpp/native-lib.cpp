@@ -14,6 +14,73 @@
 #define  LOGD(...)  __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
+#include <iostream>
+#include <streambuf>
+
+class MyStreamBuf : public std::streambuf
+{
+    enum
+    {
+        BUFFER_SIZE = 255,
+    };
+
+public:
+    MyStreamBuf()
+    {
+        buffer_[BUFFER_SIZE] = '\0';
+        setp(buffer_, buffer_ + BUFFER_SIZE - 1);
+    }
+
+    ~MyStreamBuf()
+    {
+        sync();
+    }
+
+protected:
+    virtual int_type overflow(int_type c)
+    {
+        if (c != EOF)
+        {
+            *pptr() = c;
+            pbump(1);
+        }
+        flush_buffer();
+        return c;
+    }
+
+    virtual int sync()
+    {
+        flush_buffer();
+        return 0;
+    }
+
+private:
+    int flush_buffer()
+    {
+        int len = int(pptr() - pbase());
+        if (len <= 0)
+            return 0;
+
+        if (len <= BUFFER_SIZE)
+            buffer_[len] = '\0';
+
+#ifdef ANDROID
+        android_LogPriority t = ANDROID_LOG_INFO;
+        __android_log_write(t, "native-cout", buffer_);
+#else
+        printf("%s", buffer_);
+#endif
+
+        pbump(-len);
+        return len;
+    }
+
+private:
+    char buffer_[BUFFER_SIZE + 1];
+};
+
+MyStreamBuf g_MyStreamBuf;
+
 Native* m_nativeCode = nullptr;
 bool m_isInitFinished = false;
 
@@ -21,6 +88,7 @@ JNIEXPORT void JNICALL
 Java_org_utils_JniManager_init(JNIEnv *env, jclass type, jstring resourceDir_,
                                jint inputWidth, jint inputHeight,
                                jint neuralNetType) {
+    std::cout.rdbuf(&g_MyStreamBuf);//redirect std::cout
     if (!m_isInitFinished) {
         LOGE("Start initialization process");
         const char *resourceDir = env->GetStringUTFChars(resourceDir_, 0);

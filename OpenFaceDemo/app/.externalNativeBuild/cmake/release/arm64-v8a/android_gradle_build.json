@@ -1,0 +1,874 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/dff/openface-android-sample/OpenFaceDemo/app/CMakeLists.txt",
+		"/home/dff/dlib-19.4/dlib/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/home/dff/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"IlmImf-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "IlmImf",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libIlmImf.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"dlib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "dlib",
+			"buildCommand" : "/home/dff/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target dlib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/base64/base64_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bigint/bigint_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bigint/bigint_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bit_stream/bit_stream_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/md5/md5_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/tokenizer/tokenizer_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/unicode/unicode.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/data_io/image_dataset_metadata.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/data_io/mnist.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dnn/cpu_dlib.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dnn/tensor_tools.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bsp/bsp.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_extensions.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/linker/linker_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/extra_logger_headers.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/logger_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/logger_config_file.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/misc_api/misc_api_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/misc_api/misc_api_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_extensions.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockstreambuf/sockstreambuf.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_kernel.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_iostream.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_http.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/multithreaded_object_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threaded_object_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_shared.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/thread_pool_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/async.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/timer/timer.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot   -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/stack_trace.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a/dlib/libdlib.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"dlib_shared-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "dlib_shared",
+			"buildCommand" : "/home/dff/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target dlib_shared",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/base64/base64_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bigint/bigint_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bigint/bigint_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bit_stream/bit_stream_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/md5/md5_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/tokenizer/tokenizer_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/unicode/unicode.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/data_io/image_dataset_metadata.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/data_io/mnist.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dnn/cpu_dlib.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dnn/tensor_tools.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/bsp/bsp.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/dir_nav/dir_nav_extensions.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/linker/linker_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/extra_logger_headers.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/logger_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/logger/logger_config_file.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/misc_api/misc_api_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/misc_api/misc_api_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_extensions.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockets/sockets_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockstreambuf/sockstreambuf.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_kernel.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_iostream.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/server/server_http.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/multithreaded_object_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threaded_object_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_1.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_2.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/threads_kernel_shared.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/thread_pool_extension.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/threads/async.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/timer/timer.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Ddlib_shared_EXPORTS -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -DDLIB_NO_GUI_SUPPORT -DDLIB_DISABLE_ASSERTS      -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/dlib-19.4/dlib/stack_trace.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/dff/openface-android-sample/OpenFaceDemo/app/build/intermediates/cmake/release/obj/arm64-v8a/libdlib.so",
+			"toolchain" : "6426979852701215711"
+		},
+		"libcpufeatures-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libcpufeatures",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libcpufeatures.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libjasper-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjasper",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibjasper.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libjpeg-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjpeg",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibjpeg.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libopencv_java3-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libopencv_java3",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/../libs/arm64-v8a/libopencv_java3.so",
+			"toolchain" : "6426979852701215711"
+		},
+		"libpng-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libpng",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibpng.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libprotobuf-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libprotobuf",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibprotobuf.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libtiff-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libtiff",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibtiff.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"libwebp-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libwebp",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibwebp.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"native-lib-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/dff/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/CCNF_patch_expert.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/LandmarkDetectionValidator.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/LandmarkDetectorFunc.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/LandmarkDetectorModel.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/LandmarkDetectorParameters.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/LandmarkDetectorUtils.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/PAW.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/PDM.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/Patch_experts.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/SVR_patch_expert.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/Openface_reduced/lib/local/LandmarkDetector/src/stdafx.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/ios/CaptureAndRender/NativeCode/NativeCode.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/dff/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/dff/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include -I/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/jni/include/opencv -I../../../../../../ios/CaptureAndRender/NativeCode -I../../../../../../Openface_reduced/lib/local/LandmarkDetector/include -I/home/dff/dlib-19.4/dlib/.. -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/dff/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/dff/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++14 -O2 -DNDEBUG  -fPIC   -std=c++14  -c ",
+					"src" : "/home/dff/openface-android-sample/OpenFaceDemo/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/dff/openface-android-sample/OpenFaceDemo/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/home/dff/openface-android-sample/OpenFaceDemo/app/build/intermediates/cmake/release/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_calib3d-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_calib3d",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_calib3d.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_core-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_core",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_core.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_dnn-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_dnn",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_dnn.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_features2d-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_features2d",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_features2d.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_flann-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_flann",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_flann.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_highgui-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_highgui",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_highgui.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_imgcodecs-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_imgcodecs",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_imgcodecs.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_imgproc-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_imgproc",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_imgproc.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_java-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_java",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_java3.so",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_ml-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_ml",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_ml.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_objdetect-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_objdetect",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_objdetect.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_photo-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_photo",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_photo.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_shape-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_shape",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_shape.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_stitching-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_stitching",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_stitching.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_superres-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_superres",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_superres.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_video-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_video",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_video.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_videoio-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_videoio",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_videoio.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"opencv_videostab-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_videostab",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/libs/arm64-v8a/libopencv_videostab.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"tbb-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "tbb",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libtbb.a",
+			"toolchain" : "6426979852701215711"
+		},
+		"tegra_hal-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "tegra_hal",
+			"buildType" : "release",
+			"output" : "/home/dff/OpenCV-3.3.0-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libtegra_hal.a",
+			"toolchain" : "6426979852701215711"
+		}
+	},
+	"toolchains" : 
+	{
+		"6426979852701215711" : 
+		{
+			"cCompilerExecutable" : "/home/dff/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/dff/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

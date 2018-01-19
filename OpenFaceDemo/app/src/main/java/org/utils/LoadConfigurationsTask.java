@@ -88,10 +88,12 @@ public class LoadConfigurationsTask extends android.os.AsyncTask<Void,Void,Boole
                     && iSNeuralTypeDefined) {
 //                writeSelectedFilesOnStorage(m_resources);
                 String[] libraryList_withPrefix = {
-                        "opencv_java3",
+                        //"opencv_java3",
                         "native-lib"
                 };
                 JniManager.loadLibraries(libraryList_withPrefix);
+
+                Toast.makeText(m_context, "Initializing OpenFace...", Toast.LENGTH_SHORT).show();
                 JniManager.init(private_path, mInputWidth, mInputHeight,
                                 mNeuralType.ordinal());
             } else {

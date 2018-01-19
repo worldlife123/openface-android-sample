@@ -1329,7 +1329,7 @@ bool DetectFaces(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>& i
 {
 		
 	vector<cv::Rect> face_detections;
-	classifier.detectMultiScale(intensity, face_detections, 1.2, 2, 0, cv::Size(50, 50));
+	//classifier.detectMultiScale(intensity, face_detections, 1.2, 2, 0, cv::Size(50, 50)); //disabled because of ndk linker error
 
 	// Convert from int bounding box do a double one with corrections
 	o_regions.resize(face_detections.size());
