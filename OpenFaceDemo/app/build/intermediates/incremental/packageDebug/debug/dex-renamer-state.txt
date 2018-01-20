@@ -1,4 +1,0 @@
-#Sat Jan 20 22:22:30 CST 2018
-base.0=/home/dff/openface-android-sample/OpenFaceDemo/app/build/intermediates/transforms/dexMerger/debug/76
-path.0=classes.dex
-renamed.0=classes.dex
