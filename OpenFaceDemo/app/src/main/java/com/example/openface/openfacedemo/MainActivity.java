@@ -21,6 +21,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import com.hdl.logcatdialog.LogcatDialog;
+
 public class MainActivity extends AppCompatActivity implements
     org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2,
     org.utils.IOnModelsConfigurationListener {
