@@ -52,7 +52,9 @@ Temporary Items
 /OpenFaceDemo/local.properties
 /OpenFaceDemo/.idea/workspace.xml
 /OpenFaceDemo/.idea/libraries
+.DS_Store
 /OpenFaceDemo/build
+/captures
 /OpenFaceDemo/app/build
 /OpenFaceDemo/app/.externalNativeBuild
 
