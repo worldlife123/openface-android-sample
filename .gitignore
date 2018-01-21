@@ -46,7 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-*.iml
+#*.iml
 .gradle
 /OpenFaceDemo/local.properties
 /OpenFaceDemo/.idea/workspace.xml

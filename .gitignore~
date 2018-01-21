@@ -46,13 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-OpenFaceDemo/*.iml
-OpenFaceDemo/.gradle
-OpenFaceDemo/local.properties
-OpenFaceDemo/.idea/workspace.xml
-OpenFaceDemo/.idea/libraries
-OpenFaceDemo/build
-OpenFaceDemo/app/build
-OpenFaceDemo/app/.externalNativeBuild
+*.iml
+.gradle
+/OpenFaceDemo/local.properties
+/OpenFaceDemo/.idea/workspace.xml
+/OpenFaceDemo/.idea/libraries
+build
+.externalNativeBuild
 
