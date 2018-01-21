@@ -11,6 +11,7 @@
 
 #define  LOG_TAG    "OpenFaceJNI"
 
+#define  LOGI(...)  __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define  LOGD(...)  __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
@@ -90,14 +91,14 @@ Java_org_utils_JniManager_init(JNIEnv *env, jclass type, jstring resourceDir_,
                                jint neuralNetType) {
     std::cout.rdbuf(&g_MyStreamBuf);//redirect std::cout
     if (!m_isInitFinished) {
-        LOGE("Start initialization process");
+        LOGI("Start initialization process");
         const char *resourceDir = env->GetStringUTFChars(resourceDir_, 0);
 
         // TODO
         std::string resourceDirStr = std::string(resourceDir);
         m_nativeCode = new Native(resourceDirStr);
         m_nativeCode->init(std::string(), std::string());
-        LOGE("Finished init call!");
+        LOGI("Finished init call!");
 
 //    m_clnf_model = LandmarkDetector::CLNF(std::string(deepNetFilename) + "/main_clnf_ibug_glasses_movile.txt");
 //    m_det_parameters.model_location = std::string(deepNetFilename) + "/main_clnf_ibug_glasses_movile.txt";

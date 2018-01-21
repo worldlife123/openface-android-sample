@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import org.opencv.android.BaseLoaderCallback;
@@ -14,6 +16,7 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
 import org.utils.JniManager;
 import org.utils.KTUtils;
+import org.utils.IOnModelsConfigurationListener;
 import org.utils.LoadConfigurationsTask;
 import org.utils.WritePrivateStorage;
 
@@ -24,8 +27,7 @@ import java.util.Map;
 import com.hdl.logcatdialog.LogcatDialog;
 
 public class MainActivity extends AppCompatActivity implements
-    org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2,
-    org.utils.IOnModelsConfigurationListener {
+    CameraBridgeViewBase.CvCameraViewListener2, IOnModelsConfigurationListener {
     private static final String LOG_TAG = "MainActivity";
     private Mat mRgba;
     private Mat mGray;
@@ -45,8 +47,26 @@ public class MainActivity extends AppCompatActivity implements
         mOpenCvCameraView.setMaxFrameSize(640, 480);
         mOpenCvCameraView.setCvCameraViewListener(this);
 
-        new LogcatDialog(this).show();
+        //new LogcatDialog(this).show();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(0, 0, 100, "Logcat");
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case 0: new LogcatDialog(this).show(); break;
+            default:break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     private void initResources() {
 
         // Define your caffe models:
@@ -172,18 +192,24 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onCameraViewStopped() {
+        mGray.release();
+        mRgba.release();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
 
     @Override
     public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame cvCameraViewFrame) {
+        //Log.i(LOG_TAG, "onCameraFrame start!");
         mRgba = cvCameraViewFrame.rgba();
         mGray = cvCameraViewFrame.gray();
         if (isReadyToProcessDNN) {
-            Toast.makeText(getApplicationContext(), "Processing frame...", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "Processing frame...", Toast.LENGTH_SHORT).show();
             Log.i(LOG_TAG, "Processing frame...");
-            //JniManager.process(mRgba.getNativeObjAddr(), mGray.getNativeObjAddr());
+            long beginTime = System.currentTimeMillis();
+            JniManager.process(mRgba.getNativeObjAddr(), mGray.getNativeObjAddr());
+            long endTime = System.currentTimeMillis();
+            Log.i(LOG_TAG, "Processing takes " + (endTime-beginTime) + "milliseconds.");
         }
         return mRgba;
     }
@@ -193,6 +219,7 @@ public class MainActivity extends AppCompatActivity implements
         isReadyToProcessDNN = true;
         Log.v(LOG_TAG, "Configuration finished and loaded correctly");
         Toast.makeText(getApplicationContext(), "Configuration finished and loaded correctly", Toast.LENGTH_SHORT).show();
+        //mOpenCvCameraView.enableView();
         JniManager.start();
     }
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -202,9 +229,9 @@ public class MainActivity extends AppCompatActivity implements
                 case LoaderCallbackInterface.SUCCESS: {
                     Log.i(LOG_TAG, "OpenCV loaded successfully");
                     try {
-                        mOpenCvCameraView.enableView();
                         loadTask.execute();
-                        //Toast.makeText(getApplicationContext(), "Trying to initialize native-lib...", Toast.LENGTH_SHORT).show();
+                        mOpenCvCameraView.enableView();
+                        Toast.makeText(this.mAppContext, "Loading, Please wait...", Toast.LENGTH_SHORT).show();
                     } catch (Exception e) {
                         Log.v(LOG_TAG, "Failed loading library mobilenet_dnn");
                     }

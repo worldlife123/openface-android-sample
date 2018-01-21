@@ -94,6 +94,7 @@ public class LoadConfigurationsTask extends android.os.AsyncTask<Void,Void,Boole
                 JniManager.loadLibraries(libraryList_withPrefix);
                 JniManager.init(private_path, mInputWidth, mInputHeight,
                                 mNeuralType.ordinal());
+                Log.i(LOG_TAG, "JNI initialized!");
             } else {
                 Log.e(LOG_TAG, "please define the requierements," +
                         " callback, resources, dnn models, input Sizes");

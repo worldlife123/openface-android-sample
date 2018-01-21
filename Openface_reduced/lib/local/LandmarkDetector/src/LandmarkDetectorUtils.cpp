@@ -1468,6 +1468,8 @@ bool DetectSingleFaceHOG(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& int
 	vector<cv::Rect_<double> > face_detections;
 	vector<double> confidences;
 
+	std::cout<<"DetectSingleFaceHOG start!"<<std::endl;
+
 	bool detect_success = LandmarkDetector::DetectFacesHOG(face_detections, intensity_img, detector, confidences);
 					
 	if(detect_success)
@@ -1524,6 +1526,7 @@ bool DetectSingleFaceHOG(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& int
 		// A completely unreliable detection (shouldn't really matter what is returned here)
 		confidence = -2;		
 	}
+	std::cout<<"DetectSingleFaceHOG end!"<<std::endl;
 	return detect_success;
 }
 
