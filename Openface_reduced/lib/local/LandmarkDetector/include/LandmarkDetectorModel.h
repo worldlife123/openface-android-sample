@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////////
+﻿///////////////////////////////////////////////////////////////////////////////
 // Copyright (C) 2017, Carnegie Mellon University and University of Cambridge,
 // all rights reserved.
 //
@@ -40,13 +40,15 @@
 #include <opencv2/objdetect.hpp>
 
 // dlib dependencies for face detection
-#include <dlib/image_processing/frontal_face_detector.h>
-#include <dlib/opencv.h>
+//#include <dlib/image_processing/frontal_face_detector.h>
+//#include <dlib/opencv.h>
 
 #include "PDM.h"
 #include "Patch_experts.h"
 #include "LandmarkDetectionValidator.h"
 #include "LandmarkDetectorParameters.h"
+
+namespace dlib {typedef struct{bool disabled;} frontal_face_detector;} //disable dlib
 
 using namespace std;
 

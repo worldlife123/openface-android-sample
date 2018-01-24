@@ -1329,7 +1329,7 @@ bool DetectFaces(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>& i
 {
 		
 	vector<cv::Rect> face_detections;
-	//classifier.detectMultiScale(intensity, face_detections, 1.2, 2, 0, cv::Size(50, 50)); //disabled because of ndk linker error
+	classifier.detectMultiScale(intensity, face_detections, 1.2, 2, 0, cv::Size(50, 50)); //disabled because of ndk linker error when using c++ stl
 
 	// Convert from int bounding box do a double one with corrections
 	o_regions.resize(face_detections.size());
@@ -1416,16 +1416,16 @@ bool DetectSingleFace(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& intens
 
 bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>& intensity, std::vector<double>& confidences)
 {
-	dlib::frontal_face_detector detector = dlib::get_frontal_face_detector();
+	//dlib::frontal_face_detector detector = dlib::get_frontal_face_detector();
 
-	return DetectFacesHOG(o_regions, intensity, detector, confidences);
+	return false;//DetectFacesHOG(o_regions, intensity, detector, confidences);
 
 }
 
 bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>& intensity, dlib::frontal_face_detector& detector, std::vector<double>& o_confidences)
 {
 		
-	cv::Mat_<uchar> upsampled_intensity;
+	/*cv::Mat_<uchar> upsampled_intensity;
 
 	double scaling = 1.3;
 
@@ -1459,75 +1459,77 @@ bool DetectFacesHOG(vector<cv::Rect_<double> >& o_regions, const cv::Mat_<uchar>
 		
 		
 	}
-	return o_regions.size() > 0;
+	return o_regions.size() > 0;*/
+
+	return false;
+
 }
 
-bool DetectSingleFaceHOG(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& intensity_img, dlib::frontal_face_detector& detector, double& confidence, cv::Point preference)
-{
+bool DetectSingleFaceHOG(cv::Rect_<double>& o_region, const cv::Mat_<uchar>& intensity_img, dlib::frontal_face_detector& detector, double& confidence, cv::Point preference) {
 	// The tracker can return multiple faces
-	vector<cv::Rect_<double> > face_detections;
+	/*vector<cv::Rect_<double> > face_detections;
 	vector<double> confidences;
 
-	std::cout<<"DetectSingleFaceHOG start!"<<std::endl;
+	std::cout << "DetectSingleFaceHOG start!" << std::endl;
 
-	bool detect_success = LandmarkDetector::DetectFacesHOG(face_detections, intensity_img, detector, confidences);
-					
-	if(detect_success)
-	{
+	bool detect_success = LandmarkDetector::DetectFacesHOG(face_detections, intensity_img, detector,
+														   confidences);
+
+	if (detect_success) {
 
 		bool use_preferred = (preference.x != -1) && (preference.y != -1);
 
 		// keep the most confident one or the one closest to preference point if set
 		double best_so_far;
-		if(use_preferred)
-		{			
-			best_so_far = sqrt((preference.x - (face_detections[0].width/2 + face_detections[0].x)) * (preference.x - (face_detections[0].width/2 + face_detections[0].x)) + 
-							   (preference.y - (face_detections[0].height/2 + face_detections[0].y)) * (preference.y - (face_detections[0].height/2 + face_detections[0].y)));
-		}
-		else
-		{
+		if (use_preferred) {
+			best_so_far = sqrt(
+					(preference.x - (face_detections[0].width / 2 + face_detections[0].x)) *
+					(preference.x - (face_detections[0].width / 2 + face_detections[0].x)) +
+					(preference.y - (face_detections[0].height / 2 + face_detections[0].y)) *
+					(preference.y - (face_detections[0].height / 2 + face_detections[0].y)));
+		} else {
 			best_so_far = confidences[0];
 		}
 		int bestIndex = 0;
 
-		for( size_t i = 1; i < face_detections.size(); ++i)
-		{
+		for (size_t i = 1; i < face_detections.size(); ++i) {
 
 			double dist;
 			bool better;
 
-			if(use_preferred)
-			{
-				dist = sqrt((preference.x - (face_detections[i].width/2 + face_detections[i].x)) * (preference.x - (face_detections[i].width/2 + face_detections[i].x)) + 
-							   (preference.y - (face_detections[i].height/2 + face_detections[i].y)) * (preference.y - (face_detections[i].height/2 + face_detections[i].y)));
+			if (use_preferred) {
+				dist = sqrt((preference.x - (face_detections[i].width / 2 + face_detections[i].x)) *
+							(preference.x - (face_detections[i].width / 2 + face_detections[i].x)) +
+							(preference.y -
+							 (face_detections[i].height / 2 + face_detections[i].y)) *
+							(preference.y -
+							 (face_detections[i].height / 2 + face_detections[i].y)));
 				better = dist < best_so_far;
-			}
-			else
-			{
+			} else {
 				dist = confidences[i];
 				better = dist > best_so_far;
 			}
 
 			// Pick a closest face
-			if(better)
-			{
+			if (better) {
 				best_so_far = dist;
 				bestIndex = i;
-			}									
+			}
 		}
 
 		o_region = face_detections[bestIndex];
 		confidence = confidences[bestIndex];
-	}
-	else
-	{
+	} else {
 		// if not detected
-		o_region = cv::Rect_<double>(0,0,0,0);
+		o_region = cv::Rect_<double>(0, 0, 0, 0);
 		// A completely unreliable detection (shouldn't really matter what is returned here)
-		confidence = -2;		
+		confidence = -2;
 	}
-	std::cout<<"DetectSingleFaceHOG end!"<<std::endl;
-	return detect_success;
+	std::cout << "DetectSingleFaceHOG end!" << std::endl;
+	return detect_success;*/
+
+	return false;
+
 }
 
 //============================================================================

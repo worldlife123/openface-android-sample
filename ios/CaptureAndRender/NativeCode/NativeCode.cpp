@@ -109,8 +109,8 @@ void Native::processFrame(cv::Mat& frame)
     }
     
     // Include elapsed time info in the frame
-    std::string txt = to_string(m_meanElapsedTime);
-    cv::putText(frame, txt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5,
-                CV_RGB(255, 0, 0));
+    //std::string txt = to_string(m_meanElapsedTime); //to_string is not implemented in gnustl
+    //cv::putText(frame, txt, cv::Point(10, 20), CV_FONT_HERSHEY_SIMPLEX, 0.5,
+    //            CV_RGB(255, 0, 0));
 }
 

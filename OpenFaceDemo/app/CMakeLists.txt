@@ -113,7 +113,8 @@ SET(OpenCV_LIBS
     #libopencv_videostab
    )
 MESSAGE(STATUS "OpenCV libs found at ${OpenCV_LIBS}")
-ADD_SUBDIRECTORY(${dlib_DIR} ${CMAKE_CURRENT_BINARY_DIR}/dlib)
+#dlib face detector is very slow on android, so trying to remove it
+#ADD_SUBDIRECTORY(${CMAKE_CURRENT_BINARY_DIR}/dlib) #${dlib_DIR})
 # Load openface sources
 FILE(GLOB OPENFACE_SOURCES
     "${OPENFACE_DIR}/src/*.cpp"
@@ -150,6 +151,6 @@ INCLUDE_DIRECTORIES(src/main/cpp/
 
 target_link_libraries( native-lib
                        ${log-lib}
-                       dlib
+                       #dlib
                        ${OpenCV_LIBS}
                        )

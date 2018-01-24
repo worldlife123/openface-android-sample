@@ -122,7 +122,7 @@ CLNF::CLNF(const CLNF& other): pdm(other.pdm), params_local(other.params_local.c
 		this->kde_resp_precalc.insert(std::pair<int, cv::Mat_<float>>(it->first, it->second.clone()));
 	}
 
-	this->face_detector_HOG = dlib::get_frontal_face_detector();
+	//this->face_detector_HOG = dlib::get_frontal_face_detector();
 
 }
 
@@ -176,7 +176,7 @@ CLNF & CLNF::operator= (const CLNF& other)
 		this->hierarchical_params = other.hierarchical_params;
 	}
 
-	face_detector_HOG = dlib::get_frontal_face_detector();
+	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	return *this;
 }
@@ -204,7 +204,7 @@ CLNF::CLNF(const CLNF&& other)
 	triangulations = other.triangulations;
 	kde_resp_precalc = other.kde_resp_precalc;
 
-	face_detector_HOG = dlib::get_frontal_face_detector();
+	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	// Copy over the hierarchical models
 	this->hierarchical_mapping = other.hierarchical_mapping;
@@ -239,7 +239,7 @@ CLNF & CLNF::operator= (const CLNF&& other)
 	triangulations = other.triangulations;
 	kde_resp_precalc = other.kde_resp_precalc;
 
-	face_detector_HOG = dlib::get_frontal_face_detector();
+	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 	// Copy over the hierarchical models
 	this->hierarchical_mapping = other.hierarchical_mapping;
@@ -334,7 +334,7 @@ void CLNF::Read_CLNF(string clnf_location)
 	patch_experts.Read(intensity_expert_locations, ccnf_expert_locations);
 
 	// Read in a face detector
-	face_detector_HOG = dlib::get_frontal_face_detector();
+	//face_detector_HOG = dlib::get_frontal_face_detector();
 
 }
 

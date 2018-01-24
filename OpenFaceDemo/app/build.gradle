@@ -16,18 +16,18 @@ android {
                 cppFlags "-std=c++14"
                 arguments "-DOpenCV_DIR=" + getOpenCVDir().toString() + "/sdk/native/jni",
                         //"-DOpenCV_LIBS=" + getOpenCVDir().toString() + "/sdk/native/libs/${ANDROID_ABI}/libopencv_java3.so",
-                        "-Ddlib_DIR=" + getDlibDir().toString() + "/dlib",
+                        //"-Ddlib_DIR=" + getDlibDir().toString() + "/dlib",
                         "-DANDROID_NATIVE_API_LEVEL=23",
                         "-DANDROID_CPP_FEATURES=rtti exceptions",
-                        //"-DANDROID_STL=gnustl_static", //fail to compile because of some unavailable c++11 stl functions like std::to_string and std::round
+                        "-DANDROID_STL=gnustl_static" //may fail to compile because of some unavailable c++11 stl functions like std::to_string and std::round
                         //"-D_GLIBCXX_USE_C99=ON",
-                        "-DANDROID_STL=c++_static",//linker failed on linking cv::CascadedClassifier::detectMultiScale
+                        //"-DANDROID_STL=c++_static",//linker failed on linking cv::CascadedClassifier::detectMultiScale(may due to inconsistent stl components)
                         //"-DANDROID_STL=gnustl_shared",
-                        "-DDLIB_ENABLE_ASSERTS=OFF",
-                        "-DDLIB_NO_GUI_SUPPORT=ON",
-                        "-DDLIB_JPEG_SUPPORT=OFF",
-                        "-DDLIB_PNG_SUPPORT=OFF",
-                        "-DDLIB_LINK_WITH_SQLITE3=OFF"
+                        //"-DDLIB_ENABLE_ASSERTS=OFF",
+                        //"-DDLIB_NO_GUI_SUPPORT=ON",
+                        //"-DDLIB_JPEG_SUPPORT=OFF",
+                        //"-DDLIB_PNG_SUPPORT=OFF",
+                        //"-DDLIB_LINK_WITH_SQLITE3=OFF"
                 abiFilters 'armeabi-v7a', 'arm64-v8a'//, 'x86'
             }
         }
